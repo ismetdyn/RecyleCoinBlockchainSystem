@@ -1,0 +1,2 @@
+obj\Release\net6.0\Proto/Islem.cs \
+obj\Release\net6.0\Proto/IslemGrpc.cs: Proto/islem.proto

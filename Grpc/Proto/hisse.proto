@@ -1,0 +1,25 @@
+﻿syntax = "proto3";
+option csharp_namespace = "RecycleCoin.Grpc";
+import "google/protobuf/empty.proto";
+
+service HisseServis {
+	rpc Ekle(HisseIstek) returns (HisseDurum);
+	rpc HepsiniGetir(google.protobuf.Empty) returns (HisseDurum);
+}
+
+message HisseIstek {
+	Hisse Hisse = 1;
+}
+
+message HisseDurum{
+	bool durum = 1;
+	string mesaj = 2;
+	repeated Hisse hisseler = 3;
+}
+
+message Hisse{
+	int32 Id = 1;
+	string adres = 2;
+	double tutar = 3;
+	int64 zaman_damgasi = 4;
+}

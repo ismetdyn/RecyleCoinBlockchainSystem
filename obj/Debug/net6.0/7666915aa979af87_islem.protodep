@@ -1,0 +1,3 @@
+obj\Debug\net6.0\Grpc\Proto/Islem.cs \
+obj\Debug\net6.0\Grpc\Proto/IslemGrpc.cs: C:/Users/ismet/.nuget/packages/grpc.tools/2.50.0/build/native/include/google/protobuf/empty.proto\
+ Grpc/Proto/islem.proto

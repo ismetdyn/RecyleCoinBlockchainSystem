@@ -1,0 +1,2 @@
+obj\Release\net6.0\Proto/Blok.cs \
+obj\Release\net6.0\Proto/BlokGrpc.cs: Proto/blok.proto

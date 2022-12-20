@@ -1,0 +1,2 @@
+obj\Release\net6.0\Proto/Es.cs \
+obj\Release\net6.0\Proto/EsGrpc.cs: Proto/es.proto

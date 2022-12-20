@@ -1,0 +1,35 @@
+﻿syntax = "proto3";
+option csharp_namespace = "RecycleCoin.Grpc";
+import "google/protobuf/empty.proto";
+
+service EsServis {
+	rpc Ekle(EsIstek) returns (EsDurum);
+	rpc HepsiniGetir(google.protobuf.Empty) returns (EsDurum);
+	rpc DugumDurumuGetir(EsIstek) returns (EsDurum);
+}
+
+message EsIstek{
+	Es es = 1;
+	string dugumIpAdresi = 2;
+}
+
+message EsDurum{
+	bool durum = 1;
+	string mesaj = 2;
+	Es es = 3;
+	repeated Es esler = 4;
+	string karma = 5;
+	int64 yukseklik = 6;
+	repeated Es bilinen_esler = 7;
+	string adres = 8;
+	int32 versiyon = 9;
+}
+
+message Es{
+	int32 Id = 1;
+	string adres = 2;
+	int64 son_erisim = 3;
+	bool onyuklu_mu = 4;
+	bool erisilebilir_mi = 5;
+	int64 zaman_damgasi = 6;
+}

@@ -1,0 +1,2 @@
+obj\Release\net6.0\Proto/Hisse.cs \
+obj\Release\net6.0\Proto/HisseGrpc.cs: Proto/hisse.proto
